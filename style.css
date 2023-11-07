@@ -151,7 +151,7 @@ body {
     }
 
     /* Dispositivos pequeños (Tablets en vertical y telefonos muy grandes en horizontal, 600px y mas) */
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 600px) and (max-width: 1199px) {
         /*
             Igual que arriba
             Cambiamos la fraccion de la pantalla en base a como queramos que se vea.
@@ -166,33 +166,32 @@ body {
         /* ----PRIMERA LINEA---- */
         #caja1 {
             grid-column: 1/3;
-            grid-row: 1/3;
+            grid-row: 1/4;
             background-image: radial-gradient(rgba(255, 0, 0, 0.714), rgba(0, 0, 6, 0.543));
         }
         #caja2 {
             grid-column: 3/4;
-            grid-row: 1/3;
+            grid-row: 1/2;
             background-image: radial-gradient(rgba(106, 255, 0, 0.714), rgba(0, 0, 6, 0.543));
         }
         #caja3 {
             grid-column: 4/5;
-            grid-row: 1/3;
+            grid-row: 1/2;
             background-image: radial-gradient(rgba(13, 0, 255, 0.714), rgba(0, 0, 6, 0.543));
         }
-        
-        
-        /*-----------------------*/
-        /* ----SEGUNDA LINEA---- */
         #caja4 {
-            grid-column: 1/2;
-            grid-row: 3/4;
+            grid-column: 3/4;
+            grid-row: 2/4;
             background-image: radial-gradient(rgba(255, 0, 115, 0.714), rgba(0, 0, 6, 0.543));
         }
         #caja5 {
-            grid-column: 2/4;
-            grid-row: 3/4;
+            grid-column: 4/5;
+            grid-row: 2/3;
             background-image: radial-gradient(rgba(251, 255, 0, 0.714), rgba(0, 0, 6, 0.543));
         }
+        
+        /*-----------------------*/
+        /* ----SEGUNDA LINEA---- */
         #caja6 {
             grid-column: 4/5;
             grid-row: 3/4;
@@ -269,21 +268,28 @@ body {
 
     }
 
-    /* Dispositivos medianos (tables en horizontal, 768px y mas) */
-    @media only screen and (min-width: 768px) {
-        /* 
-            ESTE TE LO DEJO PARA QUE EXPERIMENTES TU.
-            Consejo: Copia el codigo de arriba y solo modifica la dispocion que va a tener cada elemento ;)
-         */
-    }
+    /* REALIZAR ESTO ...
 
-    /* Dispositivos grandes (portatiles y sobremesas pequeños, 992px y mas) */
-    @media only screen and (min-width: 992px) {     
-        /* 
-            Te animo a que lo intentes con este tambien.
-            Consejo: Copia el codigo de arriba y solo modifica la dispocion que va a tener cada elemento ;)
-         */
-    }
+        Dispositivos medianos (tables en horizontal, 768px y mas)
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                
+                -/-/---/--/-/--///-/-/-/---/--/-/--///-/-/-/---/--/-/--///-/-/-/---/--/-/--///-/
+                ESTE TE LO DEJO PARA QUE EXPERIMENTES TU.
+                Consejo: Copia el codigo de arriba y solo modifica la dispocion que va a tener cada elemento ;)
+                -/-/---/--/-/--///-/-/-/---/--/-/--///-/-/-/---/--/-/--///-/-/-/---/--/-/--///-/
+            }
+
+        Dispositivos grandes (portatiles y sobremesas pequeños, 992px y mas) 
+            @media only screen and (min-width: 992px) {     
+
+                -/-/---/--/-/--///-/-/-/---/--/-/--///-/-/-/---/--/-/--///-/-/-/---/--/-/--///-/
+                Te animo a que lo intentes con este tambien.
+                Consejo: Copia el codigo de arriba y solo modifica la dispocion que va a tener cada elemento ;)
+                -/-/---/--/-/--///-/-/-/---/--/-/--///-/-/-/---/--/-/--///-/-/-/---/--/-/--///-/
+            }
+
+
+    */
 
     /* Dispositivos extra grandes (portatiles grandes y sobremesas grandes, 1200px y mas) */
     @media only screen and (min-width: 1200px) { 
